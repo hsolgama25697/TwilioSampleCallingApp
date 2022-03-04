@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twilio.js@1.2.0",
+      "destination": "wwwroot/js/twilio.js/",
+      "files": [
+        "twilio.min.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <h2>Outgoing Call</h2>
+        <div class="row mt-5">
+            <div class="col-12 col-md-6">
+                <label> Outgoing Call : </label>
+                <input type="tel" id="outgoingCall" placeholder="Outgoing Call" />
+            </div>
+            <div class="col-12 col-md-2">
+                <input type="button" id="OCall" value=" Call " class="bg-success text-white" />
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-2">
+                <input type="button" id="OMute" value=" Mute " class="bg-warning text-black" />
+                <input type="button" id="OUnMute" value=" Mute " class="bg-warning text-black" />
+            </div>
+            <div class="col-12 col-md-2">
+                <input type="button" id="ORejectCall" value=" End " class="bg-danger text-white" />
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <h2>Incoming Call</h2>
+        <h3 class="incomingNumber mt-2"></h3>
+        <h4 class="divtimer"></h4>
+        <div class="row mt-5">
+            <div class="col-12 col-md-2">
+                <input type="button" id="ICall" value=" Calling " class="bg-success text-white" />
+            </div>
+            <div class="col-12 col-md-2">
+                <input type="button" id="IMute" value=" Mute " class="bg-warning text-black" />
+                <input type="button" id="IUnMute" value=" Mute " class="bg-warning text-black" />
+            </div>
+            <div class="col-12 col-md-2">
+                <input type="button" id="IRejectCall" value=" Reject " class="bg-danger text-white" />
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+<script type="text/javascript" src="~/js/twilio.min.js"></script>
+<script type="text/javascript" src="~/js/site.js"></script>
+}
